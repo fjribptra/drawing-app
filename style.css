@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #222;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+canvas {
+    box-shadow: 2px 2px 2px rgb(0,0,0)
+}
+
+.tools {
+    /* width: 100vw; */
+    border: 2px solid white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #222;
+    /* margin-top: 15px; */
+}
+
+.tools button {
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background: #222;
+    color: #fff;
+    border: 1px solid white;
+}
+
+.tools .colorField-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.tools .color-field {
+    width: 40px;
+    height: 40px;
+    /* min-height: 40px;
+    min-width: 40px; */
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.tools .color-picker {
+    cursor: pointer;
+}
+
+.tools .pen-width {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .tools {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tools .colorField-container {
+        /* flex-direction: column; */
+    }
+}
